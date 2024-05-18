@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROMI | Decentralized Perpetual Exchange</title>
+    <link  rel = "icon" href =  "logo.png" 
+        type = "image/x-icon"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body style="overflow: unset;" class="bg-black m-auto ">
+    <div id="root">
+
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid m-auto navbar-expand-lg bg-black">
+                <img height="50" width="50" src="logo.png" alt="">
+                <a class="navbar-brand text-light m-auto " href="#">Romi Finance</a>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="dashboard.html">Dashboard</a>
+                        </li>
+            
+            
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                NFT
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item text-light" href="#">Mint</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Stack NFT</a></li>
+            
+                            </ul>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Earn</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Buy</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Refrrals</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Ecosystem</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">About</a>
+            
+            
+                    </ul>
+            
+                    </li>
+                    <button class="btn btn-success" id="trade" type="submit">Trade</button>
+                    </li>
+                    <div>
+            
+                        <button class="btn btn-dark " id="mr" type="button">
+                            <div class="wallet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-wallet" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z" />
+                                </svg>
+                            </div>
+                            <div>
+                                Connect Wallet
+                            </div>
+            
+                        </button>
+                    </div>
+            
+                    <div>
+            
+                        <div class="btn-group">
+                            <button class="btn btn-dark" id="mr" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="wallet">
+                                    <img height="20" width="20" src="https://zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg"
+                                        alt="Avatar">
+                                </div>
+                                <div class="vr m-1"></div>
+                                <i class="bi bi-three-dots-vertical"></i>
+                                <div></div>
+                            </button>
+                            <ul id="drop" class="dropdown-menu  bg-black " style="right: 0; left: auto;">
+                                <div class="card flex-lg-grow-1 bg-black">
+                                    <div id="network-dropdown dropdown-menu-left" class="dropdown-label" role="none">Networks</div>
+                                    <li><a class="dropdown-item text-light" href="#">Etherium</a></li>
+            
+                                    <hr id="hr">
+                                    <li><a class="dropdown-item text-light" href="#">Setting</a></li>
+                                    <li><a class="dropdown-item text-light" href="#">Language</a></li>
+            
+                                </div>
+            
+                            </ul>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
+            
+        
+        </nav>
+
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <div class=" card m-md-5 bg-black">
+
+
+        <div class=" m-md-4 m-2">
+
+            
+            
+
+            <div class="m-md-5 m-3">
+
+              <div class="container m-3 bg-black">
+                  
+  
+  
+              </div>
+              <div class="container m-3 bg-black">
+                <h2 class="text-white">Stats<img src="https://zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg" alt=""></h2>
+                  
+                  <p  class="text-white">Ethereum Total Stats start from 06 Jan 2022.
+                    <br>
+                    For detailed stats:
+                  </p>
+                  
+                  
+              </div>
+  
+              <div class="row m-3 bg-black  border-bottom">
+                  
+
+               
+
+
+
+  
+                  <div class="card col bg-black text-white border-white m-3 border-bottom" style="width: 18rem;">
+                      <div class="card-body ">
+                          <h5 class="card-title table-black">overview</h5>
+                          <table class="table  table-black">
+                            <thead>
+                              <tr>
+                                <th scope="col">AUM</th>
+                                
+                                <th scope="col">34</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">$ZLP Pool</th>
+                               
+                                <td>$34</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">24h Volume</th>
+                               
+                                <td>$0</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Long Positions</th>
+                                
+                                <td>$0</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Short Positions</th>
+                         
+                                <td>$0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+  
+                      </div>
+                  </div>
+                  <div class="card col bg-black text-white border-white m-3 border-bottom" style="width: 18rem;">
+                      <div class="card-body">
+                          <h4 class="card-title">$ZLP</h4>
+                          <p>$ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees.</p>
+                          <p>Ethereum APR: 0.00%</p>
+                          <footer>
+                              <button class="btn btn-success">Buy</button>
+  
+                              <button type="button" class="btn btn-outline-dark text-white">Read More</button>
+                          </footer>
+  
+                      </div>
+                  </div>
+  
+  
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row m-3 bg-black  ">
+
+                <div class="card col bg-black border-bottom text-white m-3" style="width: 18rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">
+                            <img class="text-lg-start"src="https://zomi.finance/static/media/ic_trading.2c53815a.svg" alt="">
+                            
+                                Total Trading Volume
+                            
+                            </h5>
+                        <h1  id="h1">$0</h1>
+
+                    </div>
+                </div>
+                <div class="card col bg-black border-bottom  text-white m-3" style="width: 18rem;">
+                    <div class="card-body">
+                       
+                      
+                        <h5 class="card-title">
+                            <img class="text-lg-start"src="https://zomi.finance/static/media/ic_stats.f0a18011.svg" alt="">
+                            Open Interest</h5>
+                        <h1  id="h1">$0</h1>
+
+                    </div>
+                </div>
+
+                <div class="card col bg-black border-bottom  text-white m-3" style="width: 18rem;">
+                    <div class="card-body">
+                       
+                      
+                        <h5 class="card-title">
+                            <img class="text-lg-start"src="https://zomi.finance/static/media/ic_totaluser.ae09b310.svg" alt="">
+                            Open Interest</h5>
+                        <h1 id="h1">0</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr id="hr">
+
+
+        <div class="row m-3 bg-black  m-md-5 m-3">
+
+            <div class="card col bg-black text-white border-bottom" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Reduce Liquidation Risks</h5>
+                    <p>An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions
+                        safe from temporary wicks</p>
+
+                </div>
+            </div>
+            <div class="card col bg-black text-white border-bottom" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Save on Costs</h4>
+                    <p>Enter and exit positions with minimal spread and zero price impact. Get the optimal price without
+                        incurring additional costs.</p>
+
+                </div>
+            </div>
+
+            <div class="card col bg-black text-white border-bottom" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Simple Swaps</h4>
+                    <p>Open positions through a simple swap interface. Conveniently swap from any supported asset into
+                        the position of your choice.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="m-md-5 m-3">
+
+            <div class="container m-3 bg-black">
+                <div class="Home-title text-light">Two tokens create<br>our ecosystem</div>
+
+
+            </div>
+
+            <div class="row m-3 bg-black  border-bottom">
+
+                <div class="card col bg-black text-white border-white m-3 border-bottom" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">$ZOMI</h5>
+                        <p>$ZOMI is the utility and governance token. Accrues 30% of the platform's generated fees.</p>
+                        <p>Ethereum APR: 0.00%</p>
+                        <footer>
+                            <button class="btn btn-success">Buy</button>
+
+                            <button type="button" class="btn btn-outline-dark text-white">Read More</button>
+                        </footer>
+
+                    </div>
+                </div>
+                <div class="card col bg-black text-white border-white m-3 border-bottom" style="width: 18rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">$ZLP</h4>
+                        <p>$ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees.</p>
+                        <p>Ethereum APR: 0.00%</p>
+                        <footer>
+                            <button class="btn btn-success">Buy</button>
+
+                            <button type="button" class="btn btn-outline-dark text-white">Read More</button>
+                        </footer>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <hr id="hr">
+
+    <div class="footer-wraped">
+        <h2 class="text-center text-white">Romi Finance</h2>
+
+    </div>
+    <div class="text-center" id="ff">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter"
+            viewBox="0 0 16 16">
+            <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telegram"
+            viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-discord"
+            viewBox="0 0 16 16">
+            <path
+                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+
+        </svg>
+    </div>
+
+    <div class=" bg-black text-center">
+        <div class="text-center ">
+            <label class="bg-black text-white m-4" for="">Terms and Conditions</label>
+            <label class="bg-black text-white  m-4" for="">Refrrals Terms</label>
+            <label class="bg-black text-white  m-4" for="">Media Kit</label>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>

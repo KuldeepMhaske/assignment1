@@ -1,0 +1,80 @@
+#mr{
+    background-color: black;
+    margin-right: 25px;
+    display: inline-flex;
+    
+}
+#trade{
+    margin-right: 20px;
+}
+#LastMenu{
+    margin-right: 25px;
+    display: inline-flex;
+    padding: 2px 2px 1px 10px;
+}
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.2), 0 6px 20px 0 rgba(117, 111, 111, 0.19);
+}
+#h1_1{
+    font-size:5.7rem;
+    
+}
+#p1{
+    font-size: 20px;
+    
+}
+.Home-t{
+    font-size: 3.7rem;
+    line-height: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0;
+
+}
+.Home-title {
+    font-size: 3.7rem;
+    line-height: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0;
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.2), 0 6px 20px 0 rgba(117, 111, 111, 0.19);
+  }
+#hr{
+    color: wheat;
+}
+#ff text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.2), 0 6px 20px 0 rgba(117, 111, 111, 0.19);
+}
+
+#ff text-center svg {
+    margin-right: 500px; /* Adjust the value to control the spacing */
+}
+.row
+{
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.2), 0 6px 20px 0 rgba(117, 111, 111, 0.19);
+}
+.card-body {
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.2), 0 6px 20px 0 rgba(117, 111, 111, 0.19);
+}
+.wallet{
+   margin-right: 8px;
+}
+#h1{
+   
+    margin-left: 50px;
+  
+}
+#network-dropdown {
+    display: inline-flex;
+}
+.drop {
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+  }
